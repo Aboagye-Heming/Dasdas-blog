@@ -1,0 +1,27 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 8px;
+  }
+  .hero-content {
+    position: relative;
+  }
+  .container.hero h1 {
+    background-color: #ef5623;
+    color: #ffffff;
+    padding: 136px 50px 48px 16px;
+    max-width: 500px;
+    margin-right: 15.5px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  
+  .time-site-opened {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    position: absolute;
+    bottom: 0;
+  }

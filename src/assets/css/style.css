@@ -1,0 +1,42 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.container {
+  margin-left: 148px;
+  margin-right: 148px;
+}
+
+/* typography */
+.text-sm {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.text-md {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+.text-lg {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.text-xl {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+.text-xxl {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+}
