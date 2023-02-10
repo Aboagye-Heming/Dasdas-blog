@@ -1,0 +1,21 @@
+/* footer */
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer button {
+    background-color: black;
+    color: #ffffff;
+    padding: 12px 55px;
+  }
+  footer p {
+    max-width: 741px;
+    text-align: center;
+    max-width: 741px;
+  }
+  
