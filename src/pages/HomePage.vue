@@ -30,12 +30,16 @@ export default {
       fetch("https://techcrunch.com/wp-json/wp/v2/posts", {
         method: "GET",
         headers: {},
-      }).then((response) => {
-        response.json().then((data) => {
-          // console.log(data)
-          this.blogs = data;
+      })
+        .then((response) => {
+          response.json().then((data) => {
+            // console.log(data)
+            this.blogs = data;
+          });
         })
-      });
+        .catch((error) => {
+          console.log(error)
+        });
     },
   },
   mounted() {
