@@ -26,6 +26,11 @@ export default {
     };
   },
   methods: {
+    getData: (data) => {
+      // console.log(data)
+      this.blogs = data;
+    },
+
     getBlogs() {
       fetch("https://techcrunch.com/wp-json/wp/v2/posts", {
         method: "GET",
@@ -38,12 +43,13 @@ export default {
           });
         })
         .catch((error) => {
-          console.log(error)
+          console.log(error);
         });
     },
   },
   mounted() {
     this.getBlogs();
+    // console.log(this.$route)
   },
 };
 </script>
