@@ -3,6 +3,8 @@
     <section>
       <p>By Ryan Jackson <span>2 Month Ago </span></p>
       <h1>{{ currentBlog.title.rendered }}</h1>
+      console.log(currentBlog)
+
      <div v-html="currentBlog.content.rendered"></div>
       <h3>More Articles</h3>
     </section>
@@ -33,6 +35,7 @@ export default {
      fetch(`https://techcrunch.com/wp-json/wp/v2/posts/${this.$route.params.id}`).then((response) => {
         response.json().then((data) => {
             this.currentBlog = data;
+
         })
      })
     }

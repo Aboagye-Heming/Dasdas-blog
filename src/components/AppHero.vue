@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <main>
     <section class=" hero">
       <h1>Optimizing CSS for faster page loads</h1>
@@ -30,4 +30,4 @@ export default {
 
 <style>
 @import url("../assets/css/hero.css");
-</style>
+</style> -->

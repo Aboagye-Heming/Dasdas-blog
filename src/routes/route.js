@@ -16,7 +16,7 @@ const routes = [
     meta: {}
   },
   {
-    path: "/:id/details",
+    path: "",
     component: DetailsPage,
     name: "blog-details",
     meta: {
