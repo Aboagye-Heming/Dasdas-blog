@@ -1,5 +1,5 @@
 <template>
-  <header class="container">
+  <header>
     <router-link to="/">
       <img src="../assets/images/logo.png" alt="dasdas-logo"
     /></router-link>

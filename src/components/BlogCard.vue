@@ -1,15 +1,13 @@
 <template>
   <div class="card-wrapper">
-    <img :src="blog.jetpack_featured_media_url" alt="" />
-    <p class="text-md">Front-end <span>1 Month Ago </span></p>
-    <h4 class="text-lg">{{ blog.title.rendered }}</h4>
-    <p class="text-sm">
-      {{ blog.description }}
-    </p>
-    <div class="grid-time">
-      <p class="text-md">12 Min Read</p>
-      <router-link :to="`/${blog.id}/details`"> <p class="text-xl">Read Full</p></router-link>
-    </div>
+    <router-link :to="`/${blog.id}/details`">
+      <img :src="blog.jetpack_featured_media_url" alt="" />
+      <h4 class="text-lg">{{ blog.title.rendered }}</h4>
+      <p class="text-sm">
+        {{ blog.description }}
+      </p>
+    </router-link
+    >
   </div>
 </template>
 
@@ -26,10 +24,14 @@ export default {
 </script>
 
 <style scoped>
+
+a{
+  cursor: pointer;
+}
 .card-wrapper {
   width: 350px;
 }
-.card-wrapper img{
+.card-wrapper img {
   width: 330px;
   height: 200px;
 }

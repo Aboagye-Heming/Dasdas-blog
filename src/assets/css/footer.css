@@ -2,7 +2,7 @@
 footer {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 165px;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,5 +17,8 @@ footer {
     max-width: 741px;
     text-align: center;
     max-width: 741px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+
   }
   

@@ -3,9 +3,8 @@
     <section>
       <p>By Ryan Jackson <span>2 Month Ago </span></p>
       <h1>{{ currentBlog.title.rendered }}</h1>
-      console.log(currentBlog)
 
-     <div v-html="currentBlog.content.rendered"></div>
+      <div v-html="currentBlog.content.rendered"></div>
       <h3>More Articles</h3>
     </section>
     <div class="blog-container">
@@ -31,19 +30,20 @@ export default {
     };
   },
   methods: {
-    getBlog(){
-     fetch(`https://techcrunch.com/wp-json/wp/v2/posts/${this.$route.params.id}`).then((response) => {
+    getBlog() {
+      fetch(
+        `https://techcrunch.com/wp-json/wp/v2/posts/${this.$route.params.id}`
+      ).then((response) => {
         response.json().then((data) => {
-            this.currentBlog = data;
-
-        })
-     })
-    }
+          this.currentBlog = data;
+        });
+      });
+    },
   },
 
   mounted() {
-    this.getBlog()
-    console.log(this.$route)
+    this.getBlog();
+    console.log(this.$route);
   },
 };
 </script>

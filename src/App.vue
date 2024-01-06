@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <AppHeader />
     <div class="container">
+      <AppHeader />
       <router-view></router-view>
     </div>
-  </div>
 </template>
 
 <script>

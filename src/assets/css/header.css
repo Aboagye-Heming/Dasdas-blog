@@ -2,8 +2,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 58px;
+  padding-top: 2rem;
+  margin-bottom: 5rem;
+  max-width: 100%;
 }
 .header-icons {
   display: flex;
